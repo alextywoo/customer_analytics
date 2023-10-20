@@ -1,6 +1,5 @@
 #1
 rm(list=ls())
-setwd("~/OneDrive - UW/MKTG 562/Lyft Case Assignment")
 test_campaign <- read.csv("Lyft.csv", stringsAsFactors = FALSE)
 summary(test_campaign)
 offer_used_pct <- mean(test_campaign$used_offer)
