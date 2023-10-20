@@ -1,5 +1,4 @@
 rm(list=ls())   #Clean environment
-setwd("~/OneDrive - UW/MKTG 562/Team Assignment 03")
 neiman_marcus <- read.csv('neiman_marcus.csv')
 install.packages("sandwich")
 install.packages("lmtest")
