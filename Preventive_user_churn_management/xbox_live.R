@@ -1,5 +1,4 @@
 rm(list=ls())   # Clean environment
-setwd("~/OneDrive - UW/MKTG 562/Team Assignment 04")
 xbox_live <- read.csv('xbox_live.csv')
 
 library(purrr)
