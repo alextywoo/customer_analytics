@@ -1,8 +1,5 @@
 rm(list=ls())   # Clean environment
 
-# Set working directory 
-setwd("~/OneDrive - UW/MKTG 562/Team Assignment 02")
-
 # Reading data
 Cola_test <- read.csv("cocacola.csv", stringsAsFactors = FALSE)
 library(dplyr)
@@ -168,12 +165,4 @@ ROI <- Profit_validation / (validation_target_num * 20)
 Profit_total <- Profit_validation/15000*50000
 
 
-#Output csv
-library(dplyr)
-
-Alex_Aditi_Emily_Kyle <- Cola_test %>%
-  select(cust_id, target_wave2) %>%
-  mutate(group = 'Alex_Aditi_Emily_Kyle')
-write.csv(Alex_Aditi_Emily_Kyle, 'Alex_Aditi_Emily_Kyle.csv',
-          row.names = FALSE)
 
