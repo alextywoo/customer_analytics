@@ -1,5 +1,4 @@
 rm(list=ls())   # Clean environment
-setwd("~/OneDrive - UW/MKTG 562/Team assignment 01")
 ColSolare <- read.csv('ColSolare.csv')
 #1
 ColSolare$restaurant <- ifelse(ColSolare$customer_type == 'restaurant', 1, 0)
